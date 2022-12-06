@@ -1,0 +1,61 @@
+@font-face {
+  font-family: digital;
+  src: url(DS-DIGI.TTF);
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background: linear-gradient(to right, #000000, #9e9147);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.grid-container {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    min-height: 100vh;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: minmax(120px, auto) repeat(6, 100px);
+}
+
+button {
+  color: darkgrey;
+  font-size: 32px;
+  border: 1px solid black;
+  outline: none;
+  background-color: #292927;
+}
+
+button:hover {
+  opacity: 85%;
+}
+
+#display {
+  grid-column: 1 / -1;
+  background-color: #948b5c;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  flex-direction: column;
+  padding: 10px;
+  word-wrap: break-word;
+  word-break: break-all;
+  margin: 5px;
+  font-family: digital;
+  font-size: 64px;
+}
+
+.equals {
+  grid-column: span 2;
+}
+
+#previous {
+  opacity: 75%;
+  font-size: 24px;
+}
+
+#current {
+  font-size: 40px;
+}
